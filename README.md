@@ -1,7 +1,7 @@
 # Simple Unity Clicker Game
 
 <p align='center'>
-  <img src="https://github.com/ajgquional/algo-unity-clickergame/blob/b78c4d22a742a66f72523e9be247fa999bcba689/Algo-Unity-Simple-Clicker-Game.gif" width=600 height=400/>
+  <img src="https://github.com/ajgquional/algo-unity-clickergame/blob/b78c4d22a742a66f72523e9be247fa999bcba689/Algo-Unity-Simple-Clicker-Game.gif" width=650 height=400/>
 </p>
 
 ## About the game
@@ -19,9 +19,15 @@ This repository contains all the scripts needed to complete the simple clicker g
 
 ## General instructions on using the scripts
 1. Setup the game as discussed in the class or as detailed in the handbook.
-2. Create scripts in a Code folder under Assets.
-3. Copy the program from this repository to the corresponding script created.
-4. Attach the scripts to the corresponding game objects (Square.cs to the two squares, Player.cs to the Main Camera, and UI.cs to the Clicker_UI game object).
+2. Create three scripts in a Code folder under Assets:
+   * Square.cs
+   * Player.cs
+   * UI.cs
+4. Copy the program from this repository to the corresponding script created.
+5. Attach the scripts to the corresponding game objects:
+   * Square.cs to the two squares
+   * Player.cs to the Main Camera
+   * UI.cs to the Clicker_UI game object
 
 ## Relevant links
 * Complete handbook/lesson slides (c/o Algorithmics): https://docs.google.com/presentation/d/1g2Nl-FZZD4h7XSn91sR29hPDEImYyYC06LkRD_7QAvs/edit#slide=id.p1
