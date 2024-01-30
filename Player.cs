@@ -1,14 +1,17 @@
-/* **************************************************
- * Author: 
+/* ****************************************************************************************************
+ * AUTHOR: 
  *      Adrian Josele G. Quional
- * 
- * Program description: 
- *      This program controls the operation of the 
- *      player in the simple Clicker game.
- * 
- * How to use the script:
- *      Attach the script to the Main Camera object.
- * **************************************************/
+ * ====================================================================================================
+ * SCRIPT DESCRIPTION: 
+ *      This script controls the operation of the player
+ * ====================================================================================================
+ * VERSIONS:
+ *      -   Version 1:  Implemented the basic player mechanics: initialization of a list of squares,
+ *                      checking of victory and defeat scenarios, and restarting of level.
+ * ====================================================================================================
+ * HOW TO USE THE SCRIPT:
+ *      -   Attach the script to the Main Camera object                                 [for Version 1]
+ * ****************************************************************************************************/
 
 // libraries
 using System.Collections;
