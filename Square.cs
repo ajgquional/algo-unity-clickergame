@@ -1,15 +1,24 @@
-/* **************************************************
- * Author: 
+/* ****************************************************************************************************
+ * AUTHOR: 
  *      Adrian Josele G. Quional
- * 
- * Program description: 
- *      This program controls the operation of the 
- *      squares in the simple Clicker game.
- * 
- * How to use the script:
- *      Attach the script to each of the target 
- *      and trap squares. 
- * **************************************************/
+ * ====================================================================================================
+ * SCRIPT DESCRIPTION: 
+ *      This script implements the operation (movement and catching) of the squares.
+ * ====================================================================================================
+ * VERSIONS:
+ *      -   Version 1:  Implemented the random movement and catch mechanics.
+ * ====================================================================================================
+ * HOW TO USE THE SCRIPT:
+ *      -   Create the target and trap squares                                          [for Version 1]
+ *      -   Make sure that there is a Box Collider 2D component attached to the squares [for Version 1]
+ *      -   Attach the script to the target and trap square objects                     [for Version 1]
+ *      -   Specify the correct property settings per square, specifically:             
+ *              - Move Step
+ *              - Is Trap
+ *              - Speed Factor
+ *              - Scale Factor
+ *              - Catch Count                                                           [for Version 1]
+ * ****************************************************************************************************/
 
 // libraries
 using System.Collections;
