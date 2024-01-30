@@ -1,14 +1,28 @@
-/* **************************************************
- * Author: 
+/* ****************************************************************************************************
+ * AUTHOR: 
  *      Adrian Josele G. Quional
- * 
- * Program description: 
- *      This program controls the operation of the 
- *      UI in the simple Clicker game.
- * 
- * How to use the script:
- *      Attach the script to the Clicker_UI object.
- * **************************************************/
+ * ====================================================================================================
+ * SCRIPT DESCRIPTION: 
+ *      This script controls the operation of the UI.
+ * ====================================================================================================
+ * VERSIONS:
+ *      -   Version 1:  Implemented the score update, victory and defeat panel show, and restart.
+ * ====================================================================================================
+ * HOW TO USE THE SCRIPT:
+ *      -   Attach the script to the Clicker_UI object                                  [for Version 1]
+ *      -   Disable the Panel object inside Clicker_UI                                  [for Version 1]
+ *      -   In the UI component, link the corresponding UI elements to the
+ *          corresponding property/field:
+ *              - Score Text (should be the Score inside Clicker_UI)
+ *              - Panel (should be the disabled Panel inside Clicker_UI)
+ *              - Panel Score Text (should be the Total_Score inside the disabled Panel)
+ *              - Defeat Text (should be the Defeat_Header inside the disabled Panel)
+ *              - Victory Text (should be the Victory_Header inside the disabled Panel) [for Version 1]
+ *      -   Specify that the OnClickRestart() method would be executed when the 
+ *          Restart Button is clicked
+ *              Clicker_UI -> Panel -> Button_Restart                                   [for Version 1]
+ *      -   Ensure that an Event System object is present for the UI to work            [for Version 1]
+ * ****************************************************************************************************/
 
 // libraries
 using System.Collections;
@@ -18,10 +32,10 @@ using UnityEngine.UI; // to be able to work with the UI
 
 public class UI : MonoBehaviour
 {
-    // linking to different UI elements
-    public Text scoreText;
+    static UI singleton;
 
-    static UI singleton;         
+    // links to the different UI elements
+    public Text scoreText;         
     public GameObject panel;
     public Text panelScoreText;
     public Text defeatText;
